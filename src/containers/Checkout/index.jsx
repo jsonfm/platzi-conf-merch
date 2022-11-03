@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useAppContext } from "@/hooks/useAppContext";
 import { UilTrashAlt } from '@iconscout/react-unicons';
 import { actionTypes as cartTypes } from "@/reducers/cart";
+import { Link } from "react-router-dom";
 import "@/components/ProductCard/styles.css";
 import "./styles.css";
 
@@ -43,13 +44,15 @@ export const Checkout = () => {
       </div>
       <div className="checkout-price">
         <h4>Total: $ <b>{totalPrice}</b></h4>
-        <button className="product-button">
-          Proceder
-        </button>
+        <Link to="/checkout/information">
+          <button className="product-button">
+            Proceder
+          </button>
+        </Link>
       </div>
       </>
       :
-      <div className="checkout-message">Aún no has seleccionado ningún artículo :c</div>
+      <div className="checkout-message">You haven't selected any items yet :c</div>
       }
 
     </div>

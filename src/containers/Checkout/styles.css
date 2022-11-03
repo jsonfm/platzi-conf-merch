@@ -49,7 +49,9 @@
   /* border: 2px solid; */
   padding: .5rem;
   min-width: 330px;
+  /* min-height: 300px; */
   color: var(--secondary);
+  border-left: 2px solid;
 
 }
 

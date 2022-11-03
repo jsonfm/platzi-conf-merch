@@ -22,11 +22,14 @@ export const ProductCard = ({ product }) => {
     <div className="product-card" key={id}>
       <img className="product-img" src={image} />
       <div className="product-info">
-        <p className="product-title">{title}</p>
+        <div className="product-header">
+          <p>{title}</p>
+          <p className="product-price">$ {price.toFixed(2)}</p>
+        </div>
         <p className="product-description">{description}</p>
-        <p className="product-price">$ {price}</p>
+
         <button className="product-button" onClick={onClick}>
-          {productInCart ? "Remove" : "Add"}
+          {productInCart ? "Remove" : "Add to cart"}
         </button>
       </div>
     </div>

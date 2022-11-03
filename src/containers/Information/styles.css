@@ -1,0 +1,14 @@
+.information-form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  max-width: 600px;
+  gap: 12px;
+}
+
+.information-form input {
+  height: 3rem;
+  outline: none;
+  /* border: none; */
+  border-radius: 0px;
+}

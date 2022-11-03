@@ -1,16 +1,22 @@
 .product-card {
   width: 330px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 0;
 }
 
 .product-img {
-  width: 330px;
+  width: 100%;
   height: 300px;
   /* object-fit: cover; */
+  object-fit: contain;
 }
 
-.product-title {
-  font-size: 1.4rem;
+.product-header {
+  /* font-size: 1.4rem; */
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
 }
 
 .product-info {
@@ -24,6 +30,7 @@
   border: none;
   padding: 1rem 0.5rem;
   min-width: 96px;
+  width: 100%;
   cursor: pointer;
   font-weight: bold;
 }
