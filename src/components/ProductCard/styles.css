@@ -1,0 +1,35 @@
+.product-card {
+  width: 330px;
+}
+
+.product-img {
+  width: 330px;
+  height: 300px;
+  /* object-fit: cover; */
+}
+
+.product-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.product-info {
+  padding: 1rem .5rem;
+  width: 100%;
+}
+
+.product-button {
+  margin-top: 12px;
+  outline: none;
+  border: none;
+  padding: 1rem 0.5rem;
+  min-width: 96px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.product-button:hover {
+  transform: scale(1.15);
+  background: var(--secondary);
+  color: white;
+}

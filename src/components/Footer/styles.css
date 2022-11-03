@@ -1,0 +1,15 @@
+
+.footer {
+  background: var(--primary);
+  color: white;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
