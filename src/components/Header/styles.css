@@ -29,3 +29,20 @@
   transform: scale(1.4);
   cursor: pointer;
 }
+
+.header .navbar .cart {
+  position: relative;
+}
+
+.header .navbar .cart .items-count {
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  background: rgb(254, 48, 48);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
