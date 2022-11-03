@@ -1,13 +1,11 @@
 export const actionTypes = {
   ADD_TO_CART: "ADD_TO_CART",
-  REMOVE_FROM_CART: "REMOVE_FROM_CART"
-}
-
+  REMOVE_FROM_CART: "REMOVE_FROM_CART",
+};
 
 export const cartReducer = (state, action) => {
   console.log(state, action);
   switch (action.type) {
-
     case actionTypes.ADD_TO_CART:
       return { ...state, cart: [...state.cart, action.payload] };
 
@@ -16,10 +14,10 @@ export const cartReducer = (state, action) => {
       // !findIndex && state.cart.splice(findIndex, 1);
       return {
         ...state,
-        cart: state.cart.filter(items => items.id !== action.payload.id),
+        cart: state.cart.filter((items) => items.id !== action.payload.id),
       };
 
     default:
       return state;
   }
-}
+};

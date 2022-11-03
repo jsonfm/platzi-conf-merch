@@ -1,15 +1,12 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-
 export const Layout = ({ children }) => {
-  return(
+  return (
     <>
-      <Header/>
-      <main className="container">
-        {children}
-      </main>
-      <Footer/>
+      <Header />
+      <main className="container">{children}</main>
+      <Footer />
     </>
-  )
-}
+  );
+};

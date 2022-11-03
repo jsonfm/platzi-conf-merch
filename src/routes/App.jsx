@@ -11,16 +11,15 @@ import { Layout } from "@/components/Layout";
 import { AppProvider } from "@/store/provider";
 
 function App() {
-
   return (
     <BrowserRouter>
       <AppProvider>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/checkout" element={<Checkout />}/>
-            <Route path="/checkout/information" element={<Information />}/>
-            <Route path="*" element={<NotFound />}/>
+            <Route path="/" element={<Home />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/checkout/information" element={<Information />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </AppProvider>

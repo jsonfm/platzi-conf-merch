@@ -5,9 +5,11 @@ import { ProductCard } from "@/components/ProductCard";
 export const Home = () => {
   const { state } = useAppContext();
 
-  return(
+  return (
     <ProductsList>
-      {state.products.map((product, index) => <ProductCard key={index} product={product} /> )}
+      {state.products.map((product, index) => (
+        <ProductCard key={index} product={product} />
+      ))}
     </ProductsList>
-  )
-}
+  );
+};
