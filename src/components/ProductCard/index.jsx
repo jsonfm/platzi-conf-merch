@@ -1,6 +1,6 @@
 import { useAppContext } from "@/hooks/useAppContext";
 import { actionTypes as cartTypes } from "@/reducers/cart";
-
+import { UilMultiply } from '@iconscout/react-unicons';
 import "./styles.css";
 
 export const ProductCard = ({ product }) => {
@@ -29,7 +29,10 @@ export const ProductCard = ({ product }) => {
         <p className="product-description">{description}</p>
 
         <button className={!productInCart ? "btn btn-primary": "btn btn-secondary"} onClick={onClick}>
-          {productInCart ? "Remove From Cart" : "Add to cart"}
+          {productInCart
+          ? "Remove From Cart"
+          : "Add To Cart"
+          }
         </button>
       </div>
     </div>

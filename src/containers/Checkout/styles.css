@@ -2,6 +2,14 @@
   background: var(--primary);
   color: white;
   min-height: 90vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.checkout-section h3 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .checkout-container {
@@ -47,7 +55,7 @@
 
 .checkout-price {
   /* border: 2px solid; */
-  padding: .5rem;
+  padding: 1rem;
   min-width: 330px;
   /* min-height: 300px; */
   color: var(--secondary);

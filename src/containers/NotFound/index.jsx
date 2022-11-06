@@ -1,3 +1,7 @@
+import "./styles.css";
+
 export const NotFound = () => {
-  return <div>Not Found.</div>;
+  return (
+    <div className="">Not Found.</div>
+  );
 };
