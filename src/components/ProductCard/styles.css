@@ -28,15 +28,15 @@
   margin-top: 12px;
   outline: none;
   border: none;
-  padding: 1rem 0.5rem;
-  min-width: 96px;
-  width: 100%;
-  cursor: pointer;
-  font-weight: bold;
+
 }
 
 .product-button:hover {
-  transform: scale(1.15);
+  transform: scale(1.025);
   background: var(--secondary);
   color: white;
+}
+
+.product-card .btn {
+  margin-top: 16px;
 }

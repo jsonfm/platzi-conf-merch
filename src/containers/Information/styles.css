@@ -3,12 +3,23 @@
   flex-direction: column;
   padding: 2rem 1rem;
   max-width: 600px;
-  gap: 12px;
+  gap: 16px;
+  margin: 0 auto;
 }
 
 .information-form input {
   height: 3rem;
   outline: none;
-  /* border: none; */
+  border: none;
   border-radius: 0px;
+  padding: 0 .5rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.information-form input:focus {
+  border-bottom: 4px solid var(--secondary);
+}
+
+.information-form .btn {
+  margin-top: 2rem;
 }

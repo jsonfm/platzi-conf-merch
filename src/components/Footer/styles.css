@@ -2,9 +2,11 @@
 .footer {
   background: var(--primary);
   color: white;
-  height: 5rem;
+  min-height: 5rem;
   display: grid;
   place-items: center;
+  padding: 1rem 0;
+
 }
 
 .footer .container {
@@ -14,5 +16,4 @@
   justify-content: center;
   height: 100%;
   gap: 12px;
-
 }

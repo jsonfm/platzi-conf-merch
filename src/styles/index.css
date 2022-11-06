@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -27,8 +29,6 @@ a {
   color: var(--secondary);
 }
 
-
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -37,3 +37,40 @@ a {
 main {
   min-height: 90vh;
 }
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem 0.5rem;
+  min-width: 96px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.025);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.btn-primary:hover,
+.btn-secondary {
+  background: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-light-hover:hover {
+  background: white;
+  color: var(--secondary);
+}
+
+

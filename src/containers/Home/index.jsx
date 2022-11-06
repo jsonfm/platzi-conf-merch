@@ -2,6 +2,7 @@ import { useAppContext } from "@/hooks/useAppContext";
 import { ProductsList } from "@/components/ProductsList";
 import { ProductCard } from "@/components/ProductCard";
 
+
 export const Home = () => {
   const { state } = useAppContext();
 

@@ -28,8 +28,8 @@ export const ProductCard = ({ product }) => {
         </div>
         <p className="product-description">{description}</p>
 
-        <button className="product-button" onClick={onClick}>
-          {productInCart ? "Remove" : "Add to cart"}
+        <button className={!productInCart ? "btn btn-primary": "btn btn-secondary"} onClick={onClick}>
+          {productInCart ? "Remove From Cart" : "Add to cart"}
         </button>
       </div>
     </div>

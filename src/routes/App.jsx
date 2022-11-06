@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Components
 import { Home } from "@/containers/Home";
@@ -12,7 +12,7 @@ import { AppProvider } from "@/store/provider";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AppProvider>
         <Layout>
           <Routes>
@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </Layout>
       </AppProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

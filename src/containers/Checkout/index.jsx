@@ -45,7 +45,7 @@ export const Checkout = () => {
       <div className="checkout-price">
         <h4>Total: $ <b>{totalPrice}</b></h4>
         <Link to="/checkout/information">
-          <button className="product-button">
+          <button className="btn btn-secondary btn-light-hover">
             Proceder
           </button>
         </Link>
