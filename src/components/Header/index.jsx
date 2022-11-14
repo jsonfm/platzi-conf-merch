@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <header className="header">
       <nav className="navbar container">
-        <Link to="/">Platzi Conf Merch</Link>
+        <div className="logo"><Link to="/">Platzi Conf Merch</Link></div>
         <Link to="/checkout" className="cart">
           {!!state.cart.length && <p className="items-count">{state.cart.length}</p>}
 
